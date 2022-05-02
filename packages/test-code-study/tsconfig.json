@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "composite": true  
+  },
+  "include": ["src", "vite.config.ts"],
+}
