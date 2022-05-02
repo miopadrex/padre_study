@@ -13,7 +13,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((props) => prop + 1)}>
+          <button
+            type="button"
+            onClick={() => setCount((props) => props.test + 1)}
+          >
             count is: {count}
           </button>
         </p>
