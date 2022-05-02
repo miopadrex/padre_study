@@ -5,6 +5,12 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "lint": "eslint ./packages --ext .ts,.tsx,.js,.jsx --cache",
+    "common-styles": "yarn workspace @common/styles",
+    "test-code-study": "yarn workspace test-code-study",
+    "postinstall": "husky install"
+  },
   "devDependencies": {
     "@types/node": "^17.0.31",
     "@types/react": "^18.0.8",
