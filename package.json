@@ -36,7 +36,9 @@
     "eslint-plugin-jest-dom": "^4.0.1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{ts,tsx,js,jsx}": "eslint --cache --fix"
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
