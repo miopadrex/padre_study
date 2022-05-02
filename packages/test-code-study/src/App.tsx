@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "./logo.svg";
 
 import "./App.css";
-import { colors } from "@common/styles";
+import { colors, theme } from "@common/styles";
 
 function App() {
   const [count, setCount] = useState(0);
